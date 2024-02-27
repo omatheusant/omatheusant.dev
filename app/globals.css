@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+@layer utilities {
+  .bg-primary {
+    @apply bg-light dark:bg-dark;
+  }
+  .text-primary {
+    @apply text-dark dark:text-light;
+  }
+}
