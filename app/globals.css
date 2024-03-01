@@ -14,4 +14,11 @@ body {
   .text-primary {
     @apply text-dark dark:text-light;
   }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  .drop-shadow-light {
+    filter: drop-shadow(0 0px 5px rgba(255, 255, 255, 0.616));
+  }
 }

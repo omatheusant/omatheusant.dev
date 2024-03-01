@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const font = localFont({
-  src: "../public/assets/fonts/MonumentExtended.otf",
-});
+import { ThemeProvider } from "@/lib/providers/ThemeProvider";
+import { monumentExtended } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Matheus Sant",
@@ -18,7 +15,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body
+        className={`${monumentExtended.className} bg-primary`}
+      >
+        {" "}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
