@@ -19,7 +19,7 @@ const Navbar = () => {
             key={item.route}
             className={`${
               isActive ? "drop-shadow-light" : ""
-            } text-xs sm:text-base hover:drop-shadow-light`}
+            } text-xs sm:text-base hover:drop-shadow-light transition-all duration-300 ease-in-out`}
           >
             {item.title}
           </Link>
