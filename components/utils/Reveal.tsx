@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -6,7 +6,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 interface Props {
   children: React.ReactNode;
   width?: "fit-content" | "100%";
-  delay?: number
+  delay?: number;
 }
 
 export const Reveal = ({ children, width = "fit-content", delay }: Props) => {
@@ -27,7 +27,7 @@ export const Reveal = ({ children, width = "fit-content", delay }: Props) => {
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div ref={ref} style={{ width }}  >
+    <div ref={ref} style={{ width }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

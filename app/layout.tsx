@@ -15,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${monumentExtended.className} bg-primary`}
-      >
+      <body className={`${monumentExtended.className} bg-primary`}>
         {" "}
         <ThemeProvider
           attribute="class"

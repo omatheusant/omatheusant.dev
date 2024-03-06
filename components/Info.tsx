@@ -27,7 +27,7 @@ const Info = () => {
         <div className="uppercase flex flex-col tracking-widest justify-end w-[200px]  z-10 text-sm">
           {month}
           <span
-            className={`lowercase -mt-1  ${univiaPro.className} z-10 text-xs`}
+            className={`lowercase -mt-1  ${univiaPro.className} z-10 text-xs animate-pulse`}
           >
             avaliable for work
           </span>
@@ -40,14 +40,16 @@ const Info = () => {
         CREATIVITY
       </span>
       <div
-        className={`${univiaPro.className} absolute font-light min-w-[500px] left-12 -bottom-[14rem]`}
+        className={`${univiaPro.className} absolute font-light min-w-[500px] left-16 -bottom-[14rem]`}
       >
-        <Reveal >
-          I am a developer and a UX/UI Design based in Brazil with one year of
-          experience as a <strong>freelancer</strong>. National customers have
-          relied on me for design, implementation and management of their
-          digital products. I love minimal and brutalist design. I love nature,
-          pizza and art.
+        <Reveal delay={0.5}>
+          <p className="text-lg">
+            I am a{" "}
+            <strong className="text-warning">Full-stack Developer</strong> and a
+            UX/UI Design based in Brazil with one year of experience. National
+            customers have relied on me for design, implementation and
+            management of their digital products.
+          </p>
         </Reveal>
       </div>
     </div>

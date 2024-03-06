@@ -1,10 +1,18 @@
-import Hero from "@/components/Hero/Hero";
+import About from "@/components/About";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import React from "react";
 
 const Home = () => {
   return (
     <>
-      <Hero/>
+      <div>
+        <Hero />
+        <About />
+        <Projects />
+        <Footer />
+      </div>
     </>
   );
 };
