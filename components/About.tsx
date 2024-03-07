@@ -6,7 +6,7 @@ import { univiaPro } from "@/utils/fonts";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Reveal delay={0.8} width="100%">
         <div className="flex mt-10 justify-center text-left mb-10">
           <h2 className="text-4xl sm:text-7xl">

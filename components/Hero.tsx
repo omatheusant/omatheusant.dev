@@ -6,7 +6,7 @@ import Section from "./Section";
 
 const Hero = () => {
   return (
-    <Section customPaddings="p-0">
+    <Section customPaddings="p-0" id="hero">
       <div className=" min-h-screen mt-16 w-full">
         <div className="relative">
           <Reveal>

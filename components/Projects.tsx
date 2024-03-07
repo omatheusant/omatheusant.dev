@@ -6,7 +6,7 @@ import { projects } from "@/constants";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="works">
       <Reveal delay={0.5} width="100%">
         <div className="flex justify-center mb-32">
           <h2 className="text-4xl sm:text-7xl">

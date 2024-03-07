@@ -2,11 +2,19 @@
 
 import { navRoutes } from "@/constants";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const pathname = usePathname();
+  const [pathname, setPathname] = useState("");
+  const [openNavigation, setOpenNavigation] = useState(false);
+
+  const params = useParams();
+
+  useEffect(() => {
+    setPathname(window.location.hash);
+  }, [params]);
+
   return (
     <nav className="flex gap-6 items-center justify-between">
       {navRoutes.map((item) => {
