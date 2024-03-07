@@ -7,21 +7,21 @@ import Section from "./Section";
 const Hero = () => {
   return (
     <Section customPaddings="p-0" id="hero">
-      <div className=" min-h-screen mt-16 w-full">
+      <div className="min-h-screen mt-16 w-full">
         <div className="relative">
           <Reveal>
-            <h1 className="text-5xl sm:text-8xl">
-              Hello <br /> I am <span className="text-warning">Matheus</span>
+            <h1 className="text-5xl lg:text-8xl">
+              Hello. <br /> I am <span className="text-warning">Matheus</span>
             </h1>
           </Reveal>
-          <div className="absolute left-[35rem] mt-3">
+          <div className="absolute lg:left-[35rem] mt-3">
             <Reveal delay={1.5} width="100%">
               <Image
                 src="/assets/icons/arrow-move.svg"
                 width={160}
                 height={100}
                 alt="arrow"
-                className="rotate-[20deg] "
+                className="rotate-[20deg] max-sm:w-[100px] mt-3 lg:mt-0"
               />
             </Reveal>
             <div className="flex flex-col absolute -right-44 -bottom-5">

@@ -28,7 +28,7 @@ const ProjectCard = ({
     <div className="flex flex-col gap-20">
       <Reveal>
         <div className="flex flex-col">
-          <div className="flex gap-9 ">
+          <div className="flex sm:flex-row flex-col gap-9 ">
             <div
               className={`${
                 direction === "left" ? "" : "order-2"
@@ -58,7 +58,7 @@ const ProjectCard = ({
                 {subtitle}
               </h3>
               <p
-                className={`${univiaPro.className} text-sm opacity-70 max-w-[400px] ml-10 `}
+                className={`${univiaPro.className} text-sm opacity-70 max-w-[400px] sm:ml-10 `}
               >
                 {description}
               </p>

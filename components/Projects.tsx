@@ -14,7 +14,7 @@ const Projects = () => {
             works:
           </h2>
         </div>
-        <div className="flex justify-center flex-col items-center  gap-36">
+        <div className="flex justify-center flex-col items-center gap-36">
           {projects.map((project, index) => {
             return (
               <Reveal delay={index - 1.5} key={index}>
@@ -33,7 +33,7 @@ const Projects = () => {
         </div>
       </Reveal>
 
-      <div className="flex flex-col text-left  items-center text-7xl mt-32">
+      <div className="flex flex-col text-left  items-center text-4xl md:5xl lg:text-7xl mt-32">
         <div className="max-w-[80%] flex flex-col">
           <div className="tracking-wide leading-tight">
             <Reveal delay={0.3}>I am always</Reveal>

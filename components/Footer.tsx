@@ -8,9 +8,9 @@ const Footer = () => {
     <Section
       id="contact-me"
       className="absolute bottom-0 left-0"
-      customPaddings="py-2 px-1"
+      customPaddings="lg:py-2 lg:px-1"
     >
-      <footer className="w-full bg-accent items-center py-10 px-60 flex justify-between text-dark rounded-sm">
+      <footer className="w-full bg-accent items-center lg:py-10 lg:px-60 flex flex-col md:flex-row py-5 px-10 justify-between text-dark rounded-sm">
         <ul className="flex gap-3 ">
           <li>
             <Link href="https://linkedin.com/in/omatheussant">Linkedin</Link>

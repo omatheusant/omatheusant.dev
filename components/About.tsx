@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </Reveal>
       <Reveal delay={0.5} width="100%">
-        <div className="flex justify-evenly items-center">
+        <div className="flex max-sm:flex-col max-sm:gap-4 justify-evenly items-center">
           <div
             className={`${univiaPro.className} text-xl uppercase  max-w-[500px] tracking-wide leading-snug indent-24`}
           >
