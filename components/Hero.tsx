@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="min-h-screen mt-16 w-full">
         <div className="relative">
           <Reveal>
-            <h1 className="text-5xl lg:text-8xl">
+            <h1 className="text-5xl md:text-8xl">
               Hello. <br /> I am <span className="text-warning">Matheus</span>
             </h1>
           </Reveal>

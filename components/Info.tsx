@@ -9,7 +9,7 @@ const Info = () => {
   const day = moment().format("DD");
 
   return (
-    <div className="flex gap-3 absolute items-center left-20    top-[300px] mt-7">
+    <div className="flex gap-3 absolute items-center left-20 sm:left-44 top-[300px] mt-7">
       <Image
         src="/assets/images/circle.svg"
         width={1000}
@@ -24,7 +24,7 @@ const Info = () => {
       </Reveal>
 
       <Reveal delay={1}>
-        <div className="uppercase flex flex-col tracking-widest justify-end md:w-[200px]  z-10 text-sm">
+        <div className="uppercase flex flex-col tracking-widest justify-end sm:w-[200px]  z-10 text-sm">
           {month}
           <span
             className={`lowercase -mt-1  ${univiaPro.className} z-10 text-xs animate-pulse`}
@@ -40,7 +40,7 @@ const Info = () => {
         CREATIVITY
       </span>
       <div
-        className={`${univiaPro.className} absolute font-light lg:min-w-[500px] -left-[5rem] sm:left-16  -bottom-[20rem] sm:-bottom-[14rem] `}
+        className={`${univiaPro.className} absolute font-light md:min-w-[500px] -left-[5rem] sm:left-16  -bottom-[20rem] sm:-bottom-[14rem] `}
       >
         <Reveal delay={0.5}>
           <p className="text-base sm:text-lg max-sm:w-[270px]">
