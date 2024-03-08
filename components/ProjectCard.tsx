@@ -43,7 +43,7 @@ const ProjectCard = ({
                   width={500}
                   height={120}
                   alt="Project image"
-                  className=" w-[500px] h-[200px] object-cover hover:scale-125 duration-1000 transition-all ease-in-out "
+                  className=" w-[500px] h-[200px] object-cover hover:scale-125 duration-1000 transition-all ease-in-out grayscale-[50%]"
                   quality={100}
                 />
               </Link>
